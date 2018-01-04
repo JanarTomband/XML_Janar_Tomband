@@ -15,7 +15,10 @@
     <style>
 h1 {
     font-size: 500%;
+    
 }
+html, body {padding:0; margin:0; height:100%;}
+footer{position:fixed; color:white; bottom: 0; left: 0; right: 0;}
 </style>
 
 </head>
@@ -78,7 +81,8 @@ h1 {
 
         @yield('content')
     </div>
-
+    <footer style="padding-top: 200px"><div class="fixed-bottom p-2 text-white text-center color " style="background-color:#154360">Janar Tomband <?php echo date("Y"); ?></div></footer>
+              
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
